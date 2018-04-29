@@ -1,0 +1,14 @@
+<h1>To Do List !</h1>
+<a href="/home/new">글 쓰러가기</a>
+<br>
+<br>
+<% @posts.each do |x| %>
+ Thing <%= x.id %>
+<br>
+<a href= "home/show/<%=x.id%>"> 내용보기 <a>
+<br>
+<a href= "home/destroy/<%=x.id%>"> 끝 ! <a>
+<br>
+<a href= "home/edit/<%=x.id%>"> 수정 <a>
+<br>
+<%end%>
